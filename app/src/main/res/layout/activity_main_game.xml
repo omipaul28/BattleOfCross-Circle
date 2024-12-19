@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainGameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp"
+        android:background="@color/bgpurple"
+        app:layout_constraintVertical_bias="0.5"
+        android:weightSum="10"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:weightSum="3"
+            >
+
+            <TextView
+                android:id="@+id/playerBoardOne"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg"
+                android:fontFamily="@font/fontone"
+                android:gravity="center"
+                android:text="Player One"
+                android:textColor="@color/x"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="30dp"
+                android:weightSum="3"
+                >
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:src="@drawable/x"
+
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="VS"
+                    android:textSize="80sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/fontone"
+                    />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:src="@drawable/o"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/playerBoardTwo"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg"
+                android:fontFamily="@font/fontone"
+                android:gravity="center"
+                android:text="Player Two"
+                android:textColor="@color/o"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:paddingVertical="30dp"
+            android:layout_weight="4"
+            >
+
+            <ImageView
+                android:id="@+id/btn0"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_bg"
+                android:onClick="TapGrid"
+                android:tag="0"
+                tools:ignore="MissingClass" />
+
+            <ImageView
+                android:id="@+id/btn1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:onClick="TapGrid"
+                android:background="@drawable/shape_bg"
+                android:tag="1" />
+
+            <ImageView
+                android:id="@+id/btn2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:onClick="TapGrid"
+                android:background="@drawable/shape_bg"
+                android:tag="2" />
+
+            <ImageView
+                android:id="@+id/btn3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:onClick="TapGrid"
+                android:background="@drawable/shape_bg"
+                android:tag="3" />
+
+            <ImageView
+                android:id="@+id/btn4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:onClick="TapGrid"
+                android:background="@drawable/shape_bg"
+                android:tag="4" />
+
+            <ImageView
+                android:id="@+id/btn5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:onClick="TapGrid"
+                android:background="@drawable/shape_bg"
+                android:tag="5" />
+
+            <ImageView
+                android:id="@+id/btn6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:onClick="TapGrid"
+                android:background="@drawable/shape_bg"
+                android:tag="6" />
+
+            <ImageView
+                android:id="@+id/btn7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:onClick="TapGrid"
+                android:background="@drawable/shape_bg"
+                android:tag="7" />
+
+            <ImageView
+                android:id="@+id/btn8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:onClick="TapGrid"
+                android:background="@drawable/shape_bg"
+                android:tag="8" />
+
+
+
+
+
+        </GridLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

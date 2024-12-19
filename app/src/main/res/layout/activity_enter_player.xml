@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterPlayerActivity"
+    android:padding="30dp"
+
+    android:background="@color/bgpurple"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Enter\nPlayer Name"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:background="@drawable/shape_bg"
+            android:fontFamily="@font/fontmain"
+            android:textColor="@color/black"
+            android:layout_marginVertical="40dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:background="@drawable/shape_bg"
+                android:layout_marginVertical="10dp"
+                >
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/x"
+                    android:layout_weight="8"
+                    android:padding="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/playerOne"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/fontmain"
+                    android:hint="Player One"
+                    android:textColor="@color/x"
+                    android:textSize="40sp"
+                    android:maxLength="10"
+                    android:inputType="text"
+                     android:imeOptions="actionNext"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:background="@drawable/shape_bg"
+                android:layout_marginVertical="10dp"
+                >
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/o"
+                    android:layout_weight="8"
+                    android:padding="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/playerTwo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/fontmain"
+                    android:hint="Player Two"
+                    android:textColor="@color/o"
+                    android:textSize="40sp"
+                    android:maxLength="10"
+                    android:inputType="text"
+                     android:imeOptions="actionDone"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvEnterGame"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="50dp"
+            android:background="@drawable/shape_bg"
+            android:fontFamily="@font/fonttwo"
+            android:gravity="center"
+            android:text="Enter"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>
